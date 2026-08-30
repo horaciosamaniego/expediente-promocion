@@ -29,6 +29,21 @@ ROOT = Path(__file__).resolve().parent
 MANIFEST = ROOT / "manifest.csv"
 OUTPUT = ROOT / "index.qmd"
 
+# ─────────── ENLACES A GOOGLE DRIVE ───────────
+# Pega aquí la URL de la carpeta de Drive. Si queda vacía, los enlaces
+# apuntan a los archivos locales (útil mientras trabajas).
+#   DRIVE_BASE = "https://drive.google.com/drive/folders/1AbC…"
+DRIVE_BASE = "https://drive.google.com/drive/folders/1SNnceUqR0iId-p9qqBcURTQAW_j9znTS?usp=sharing"
+
+# Opcional: una carpeta distinta por sección. La clave se compara como prefijo
+# del valor de la columna 'seccion'.
+#   DRIVE_FOLDERS = {"07.4": "https://drive.google.com/drive/folders/1XyZ…"}
+DRIVE_FOLDERS = {}
+
+# Una fila puede traer su propio enlace en la columna opcional 'drive_id'
+# (el ID del archivo en Drive), que tiene prioridad sobre lo anterior.
+# ──────────────────────────────────────────────
+
 ESTADOS = {"ok", "pendiente", "solicitado", "no-aplica"}
 BADGE = {
     "ok": "✅ En carpeta",
@@ -67,6 +82,30 @@ def enlace(p: Path) -> str:
         return p.relative_to(ROOT).as_posix()
     except ValueError:
         return p.as_posix()
+
+
+def carpeta_drive(seccion: str):
+    """URL de Drive que corresponde a esta sección, si hay alguna configurada."""
+    for pref in sorted(DRIVE_FOLDERS, key=len, reverse=True):
+        if seccion.startswith(pref):
+            return DRIVE_FOLDERS[pref]
+    return DRIVE_BASE or None
+
+
+def celda_archivo(r, estado, ruta):
+    """Contenido de la columna Archivo: Drive si está configurado, si no local."""
+    did = (r.get("drive_id") or "").strip()
+    if did:
+        return f"[abrir en Drive](https://drive.google.com/file/d/{did}/view)"
+    carpeta = carpeta_drive(r["seccion"].strip())
+    if carpeta:
+        if estado != "ok":
+            return "—"
+        nombre = Path(r["archivo"].strip()).name
+        return f"[Drive]({carpeta}) · `{nombre}`"
+    if estado == "ok" and ruta:
+        return f"[abrir]({enlace(ruta)})"
+    return "—"
 
 
 def orden_natural(s: str):
@@ -143,6 +182,11 @@ def render(rows):
     out.append("")
     out.append(f"**Avance:** {listos} de {total} documentos en carpeta "
                f"({100 * listos // total if total else 0} %).")
+    if DRIVE_BASE or DRIVE_FOLDERS:
+        out.append("")
+        out.append("> Los documentos se encuentran en una carpeta de Google Drive de acceso "
+                   "restringido. Si un enlace pide autorización, solicítala a "
+                   "horacio@ecoinformatica.cl.")
     out.append("")
 
     if pendientes:
@@ -166,7 +210,7 @@ def render(rows):
             estado = r["estado"].strip().lower()
             archivo = r["archivo"].strip()
             ruta = resolver(archivo) if archivo else None
-            link = f"[abrir]({enlace(ruta)})" if (estado == "ok" and ruta) else "—"
+            link = celda_archivo(r, estado, ruta)
             nota = f"<br><small>{r['notas']}</small>" if r["notas"].strip() else ""
             out.append(
                 f"| `{r['id']}` | {r['titulo']}{nota} | {r['tipo']} | {r['fecha']} | "
