@@ -1,4 +1,4 @@
-docs/
+#docs/
 .quarto/
 *_files/
 .DS_Store
