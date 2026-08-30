@@ -1,0 +1,206 @@
+#!/usr/bin/env python3
+"""
+build_index.py — genera index.qmd a partir de manifest.csv
+
+Uso:
+    python3 build_index.py            # valida y genera index.qmd
+    python3 build_index.py --check    # solo valida, no escribe
+
+Valida:
+  - IDs duplicados
+  - rutas declaradas como 'ok' cuyo archivo no está en disco
+  - archivos presentes bajo mv/ que nadie declaró en el manifiesto
+  - estados fuera del vocabulario permitido
+
+Rutas: cada valor de la columna 'archivo' se resuelve probando, en orden,
+(1) junto a este script y (2) dentro de la carpeta del repositorio. Así
+funciona tanto si el script está dentro del repo como si está un nivel
+arriba, y tolera un manifiesto con las dos convenciones mezcladas.
+"""
+
+import argparse
+import csv
+import re
+import sys
+from collections import defaultdict
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+MANIFEST = ROOT / "manifest.csv"
+OUTPUT = ROOT / "index.qmd"
+
+ESTADOS = {"ok", "pendiente", "solicitado", "no-aplica"}
+BADGE = {
+    "ok": "✅ En carpeta",
+    "solicitado": "📨 Solicitado",
+    "pendiente": "⬜ Pendiente",
+    "no-aplica": "— No aplica",
+}
+
+
+def encuentra_base():
+    """Carpeta que contiene mv/ — este script, o el único subdirectorio que la tenga."""
+    if (ROOT / "mv").is_dir():
+        return ROOT
+    cands = [d for d in sorted(ROOT.iterdir())
+             if d.is_dir() and not d.name.startswith(".") and (d / "mv").is_dir()]
+    return cands[0] if len(cands) == 1 else None
+
+
+BASE = encuentra_base()
+
+
+def resolver(archivo: str) -> Path:
+    """Ruta absoluta del documento, probando las dos convenciones."""
+    cands = [ROOT / archivo]
+    if BASE is not None and BASE != ROOT:
+        cands.append(BASE / archivo)
+    for c in cands:
+        if c.exists():
+            return c
+    return cands[0]
+
+
+def enlace(p: Path) -> str:
+    """Ruta relativa a index.qmd, para el enlace del sitio."""
+    try:
+        return p.relative_to(ROOT).as_posix()
+    except ValueError:
+        return p.as_posix()
+
+
+def orden_natural(s: str):
+    """MV-07.4.3.10 va después de MV-07.4.3.2, no antes."""
+    return [int(t) if t.isdigit() else t for t in re.split(r"(\d+)", s)]
+
+
+def load_manifest():
+    if not MANIFEST.exists():
+        sys.exit(f"No encuentro {MANIFEST}")
+    with MANIFEST.open(encoding="utf-8") as fh:
+        return list(csv.DictReader(fh))
+
+
+def validate(rows):
+    problems = []
+
+    seen = {}
+    for i, r in enumerate(rows, start=2):
+        rid = r["id"].strip()
+        if not rid:
+            problems.append(f"fila {i}: id vacío")
+        elif rid in seen:
+            problems.append(f"fila {i}: id duplicado '{rid}' (ya en fila {seen[rid]})")
+        else:
+            seen[rid] = i
+
+        estado = r["estado"].strip().lower()
+        if estado not in ESTADOS:
+            problems.append(
+                f"fila {i} ({rid}): estado '{estado}' no válido. "
+                f"Use: {', '.join(sorted(ESTADOS))}"
+            )
+
+        archivo = r["archivo"].strip()
+        if estado == "ok" and archivo and not resolver(archivo).exists():
+            problems.append(f"fila {i} ({rid}): estado 'ok' pero falta el archivo {archivo}")
+
+    if BASE is None:
+        problems.append(
+            "no encuentro una carpeta 'mv/' ni junto a este script ni en un único "
+            "subdirectorio; el chequeo de archivos huérfanos quedó DESACTIVADO"
+        )
+    else:
+        declarados = {resolver(r["archivo"].strip())
+                      for r in rows if r["archivo"].strip()}
+        for p in sorted((BASE / "mv").rglob("*")):
+            if p.is_file() and p.name != ".gitkeep" and p not in declarados:
+                problems.append(f"archivo huérfano (no declarado en el manifiesto): {enlace(p)}")
+
+    return problems
+
+
+def render(rows):
+    by_section = defaultdict(list)
+    for r in rows:
+        by_section[(r["seccion"].strip(), r["seccion_titulo"].strip())].append(r)
+
+    total = len(rows)
+    listos = sum(1 for r in rows if r["estado"].strip().lower() == "ok")
+    pendientes = [r for r in rows
+                  if r["estado"].strip().lower() in ("pendiente", "solicitado")]
+
+    out = []
+    out.append("---")
+    out.append('title: "Medios de verificación"')
+    out.append('subtitle: "Postulación a Profesor Titular — Horacio Samaniego"')
+    out.append("toc: true")
+    out.append("toc-depth: 2")
+    out.append("---")
+    out.append("")
+    out.append("> Índice generado automáticamente desde `manifest.csv`. "
+               "No editar a mano: editar el manifiesto y volver a ejecutar `build_index.py`.")
+    out.append("")
+    out.append(f"**Avance:** {listos} de {total} documentos en carpeta "
+               f"({100 * listos // total if total else 0} %).")
+    out.append("")
+
+    if pendientes:
+        out.append("## Pendientes")
+        out.append("")
+        out.append("| ID | Documento | A quién solicitar | Estado |")
+        out.append("|---|---|---|---|")
+        for r in sorted(pendientes, key=lambda x: (x["emisor"], orden_natural(x["id"]))):
+            out.append(
+                f"| `{r['id']}` | {r['titulo']} | {r['emisor']} | "
+                f"{BADGE.get(r['estado'].strip().lower(), r['estado'])} |"
+            )
+        out.append("")
+
+    for (num, titulo), items in sorted(by_section.items(), key=lambda kv: orden_natural(kv[0][0])):
+        out.append(f"## {num}. {titulo}")
+        out.append("")
+        out.append("| ID | Documento | Tipo | Fecha | Emisor | Estado | Archivo |")
+        out.append("|---|---|---|---|---|---|---|")
+        for r in sorted(items, key=lambda x: orden_natural(x["id"])):
+            estado = r["estado"].strip().lower()
+            archivo = r["archivo"].strip()
+            ruta = resolver(archivo) if archivo else None
+            link = f"[abrir]({enlace(ruta)})" if (estado == "ok" and ruta) else "—"
+            nota = f"<br><small>{r['notas']}</small>" if r["notas"].strip() else ""
+            out.append(
+                f"| `{r['id']}` | {r['titulo']}{nota} | {r['tipo']} | {r['fecha']} | "
+                f"{r['emisor']} | {BADGE.get(estado, estado)} | {link} |"
+            )
+        out.append("")
+
+    return "\n".join(out) + "\n"
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--check", action="store_true", help="solo validar")
+    args = ap.parse_args()
+
+    rows = load_manifest()
+    problems = validate(rows)
+
+    print(f"Carpeta del repositorio: {BASE if BASE else '(no detectada)'}")
+
+    if problems:
+        print(f"\n⚠️  {len(problems)} problema(s):\n", file=sys.stderr)
+        for p in problems:
+            print("  - " + p, file=sys.stderr)
+        print("", file=sys.stderr)
+    else:
+        print("✅ Manifiesto sin problemas.")
+
+    if not args.check:
+        OUTPUT.write_text(render(rows), encoding="utf-8")
+        print(f"→ escrito {OUTPUT.name} ({len(rows)} entradas)")
+
+    return 1 if problems and args.check else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

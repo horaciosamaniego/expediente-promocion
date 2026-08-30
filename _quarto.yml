@@ -1,0 +1,28 @@
+project:
+  type: website
+  output-dir: docs          # GitHub Pages sirve desde /docs en la rama main
+
+website:
+  title: "Medios de verificación — Promoción a Profesor Titular"
+  description: "Expediente de respaldo, Horacio Samaniego, UACh"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Índice
+      - href: README.md
+        text: Cómo usar
+  page-footer:
+    center: "Documento de trabajo interno — no distribuir"
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 2
+    grid:
+      body-width: 1100px    # las tablas del índice son anchas
+    link-external-newwindow: true
+
+# Los PDFs no se procesan, solo se copian al sitio
+resources:
+  - "mv/**"
