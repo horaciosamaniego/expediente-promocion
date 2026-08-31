@@ -61,11 +61,13 @@ TITULO = "Medios de verificación"
 SUBTITULO = "Postulación a Profesor Titular — Horacio Samaniego"
 
 INTRO = """
-Este índice reúne los antecedentes de respaldo del currículum presentado.
+Este índice reúne los antecedentes de respaldo del currículum presentado por 
+Horacio Samaniego Salinas para su promoción académica. Se reunen los antecedentes con
+ énfasis en los años de trayectoria desde su nombramiento como profesor Asociado.
 Cada documento se identifica con el numeral de la Plantilla Única al que
 corresponde. Los archivos están en una carpeta de Google Drive de acceso
 restringido; cualquier problema con el acceso a documentos puede solicitarse 
-[aqui](horaciosamaniego@uach.cl).
+[aqui](mailto:horaciosamaniego@uach.cl).
 """
 
 # Poner en False para ocultar estos bloques
