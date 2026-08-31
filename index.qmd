@@ -174,7 +174,7 @@ restringido; cualquier problema con el acceso a documentos puede solicitarse
 |---|---|---|---|---|---|---|---|
 | `MV-09.1` | Proyectos EXPLORA (ED190018) |  | Informe | 2015 y 2017 | ANID EXPLORA | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1WHpMQqRAAVEAK7csh0NfPmDSZjfduCQu/view) |
 | `MV-09.3` | Expositor Congreso del Futuro (Senado) |  | Programa | 2016 y 2017 | Senado de Chile | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/13bgKL5nsriouXtY1liI49OhBgxUNtY1Q/view) |
-| `MV-09.3.4` | Conferencista invitado charla"FORO CIUDAD | 2019 |  Centro de Extensión UACh — Hablemos de planificación |  identidad |  cultura | programa o invitacion | [abrir en Drive](https://drive.google.com/file/d/Universidad Austral de Chile/view) |
+| `MV-09.3.4` | Conferencista invitado charla "FORO CIUDAD Centro de Extensión UACh — Hablemos de planificación identidad cultura educación y calidad de vida" | Valdivia, Chile. Rol: Conferencista invitado. | Programa | 2019 | Universidad Austral de Chile | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1vA4F7WqgayrfUC3ZVk8mMVXgF8T-oRqo/view) |
 | `MV-09.4` | Reconocimiento a la Labor de Extensión y Vinculación 2018 — nota de prensa |  | Nota de prensa | 2018 | Universidad Austral de Chile | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/129KPO-tBzy8Z3v_4cchRGe9cT1_F38yK/view) |
 | `MV-09.5` | Un Animal Llamado Ciudad Entrevista en revista Qué Pasa | de Ivan Poduje | nota | 2014 | Revista Que Pasa | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1FPEKqOrsc0pfi5RxJIOjPj8BX7Ylesch/view) |
 
