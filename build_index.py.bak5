@@ -47,13 +47,7 @@ restringido; cualquier problema con el acceso a documentos puede solicitarse
 # Poner en False para ocultar estos bloques
 MOSTRAR_NOTA_GENERADO = False   # el aviso "generado desde manifest.csv"
 MOSTRAR_AVANCE = False          # la línea "Avance: N de M documentos"
-MOSTRAR_PENDIENTES = False
-
-# Cómo mostrar la columna 'notas':
-#   "inline"  -> al final del título, en letra pequeña (como está hoy)
-#   "columna" -> como columna propia, encabezada "Detalle"
-#   "ocultar" -> no se muestran
-NOTAS_MODO = "columna"      # la tabla de documentos que faltan
+MOSTRAR_PENDIENTES = False      # la tabla de documentos que faltan
 # ──────────────────────────────────────────
 
 # ─────────── ENLACES A GOOGLE DRIVE ───────────
@@ -231,29 +225,18 @@ def render(rows):
     for (num, titulo), items in sorted(by_section.items(), key=lambda kv: orden_natural(kv[0][0])):
         out.append(f"## {num}. {titulo}")
         out.append("")
-        if NOTAS_MODO == "columna":
-            out.append("| ID | Documento | Detalle | Tipo | Fecha | Emisor | Estado | Archivo |")
-            out.append("|---|---|---|---|---|---|---|---|")
-        else:
-            out.append("| ID | Documento | Tipo | Fecha | Emisor | Estado | Archivo |")
-            out.append("|---|---|---|---|---|---|---|")
+        out.append("| ID | Documento | Tipo | Fecha | Emisor | Estado | Archivo |")
+        out.append("|---|---|---|---|---|---|---|")
         for r in sorted(items, key=lambda x: orden_natural(x["id"])):
             estado = r["estado"].strip().lower()
             archivo = r["archivo"].strip()
             ruta = resolver(archivo) if archivo else None
             link = celda_archivo(r, estado, ruta)
-            n = r["notas"].strip()
-            if NOTAS_MODO == "columna":
-                out.append(
-                    f"| `{r['id']}` | {r['titulo']} | {n} | {r['tipo']} | {r['fecha']} | "
-                    f"{r['emisor']} | {BADGE.get(estado, estado)} | {link} |"
-                )
-            else:
-                nota = f"<br><small>{n}</small>" if (n and NOTAS_MODO == "inline") else ""
-                out.append(
-                    f"| `{r['id']}` | {r['titulo']}{nota} | {r['tipo']} | {r['fecha']} | "
-                    f"{r['emisor']} | {BADGE.get(estado, estado)} | {link} |"
-                )
+            nota = f"<br><small>{r['notas']}</small>" if r["notas"].strip() else ""
+            out.append(
+                f"| `{r['id']}` | {r['titulo']}{nota} | {r['tipo']} | {r['fecha']} | "
+                f"{r['emisor']} | {BADGE.get(estado, estado)} | {link} |"
+            )
         out.append("")
 
     return "\n".join(out) + "\n"

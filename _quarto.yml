@@ -8,7 +8,7 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Índice
+        # text: Índice
   page-footer:
     center: "Documento de trabajo interno — no distribuir — [horaciosamaniego@uach.cl](mailto:horaciosamaniego@uach.cl)"
     right: " "
