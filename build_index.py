@@ -62,12 +62,14 @@ SUBTITULO = "Postulación a Profesor Titular — Horacio Samaniego"
 
 INTRO = """
 Este índice reúne los antecedentes de respaldo del currículum presentado por 
-Horacio Samaniego Salinas para su promoción académica. Se reunen los antecedentes con
+Horacio Samaniego Salinas para su promoción académica al 31 de Agosto 2026. Se reunen los antecedentes con
  énfasis en los años de trayectoria desde su nombramiento como profesor Asociado.
 Cada documento se identifica con el numeral de la Plantilla Única al que
 corresponde. Los archivos están en una carpeta de Google Drive de acceso
 restringido; cualquier problema con el acceso a documentos puede solicitarse 
 [aqui](mailto:horaciosamaniego@uach.cl).
+
+-- ULTIMA ACTUALIZACIÓN Lunes 31 de Agosto 2026 --
 """
 
 # Poner en False para ocultar estos bloques

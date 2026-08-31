@@ -6,12 +6,14 @@ toc-depth: 2
 ---
 
 Este índice reúne los antecedentes de respaldo del currículum presentado por 
-Horacio Samaniego Salinas para su promoción académica. Se reunen los antecedentes con
+Horacio Samaniego Salinas para su promoción académica al 31 de Agosto 2026. Se reunen los antecedentes con
  énfasis en los años de trayectoria desde su nombramiento como profesor Asociado.
 Cada documento se identifica con el numeral de la Plantilla Única al que
 corresponde. Los archivos están en una carpeta de Google Drive de acceso
 restringido; cualquier problema con el acceso a documentos puede solicitarse 
 [aqui](mailto:horaciosamaniego@uach.cl).
+
+-- ULTIMA ACTUALIZACIÓN Lunes 31 de Agosto 2026 --
 
 ## 2. Títulos, grados y postdoctorados
 
@@ -26,7 +28,7 @@ restringido; cualquier problema con el acceso a documentos puede solicitarse
 
 | ID | Documento | Detalle | Tipo | Fecha | Emisor | Estado | Archivo |
 |---|---|---|---|---|---|---|---|
-| `MV-05.1` | Acreditación claustro Doctorado 2024-2029 |  | Resolución | 2024-05-13 | Universidad Austral de Chile | ⬜ Pendiente | — |
+| `MV-05.1` | Acreditación Doctorado 2024-2029 (Res A757/2024) |  | Resolución | 2024-2029 | Universidad Austral de Chile | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1AZLUb40pw1benlHPby3zUrrsWCLP08w5/view) |
 | `MV-05.2` | Claustro del programa de Magister en Informática que imparte la Escuela de Graduados de la Facultad de Ciencias de la Ingeniería |  | Constancia | 2018-2025 | Universidad Austral de Chile | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1L5wFXNVbr_E1BM1BqPk3blOfIA1UK9fD/view) |
 
 ## 6. Docencia
