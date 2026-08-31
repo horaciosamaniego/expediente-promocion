@@ -51,14 +51,14 @@ restringido; cualquier problema con el acceso a documentos puede solicitarse
 | `MV-07.2.2` | CAPES-PrInt Mobility Grant - constancia de estadía |  | Constancia | 2023 | UFRJ / CAPES | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/11WvxO6WOCYsRtICk2tAq11GxJ39WgPhv/view) |
 | `MV-07.3.1` | FONDECYT Regular 1211490 - certificado de término |  | Certificado | 2021-2024 | ANID | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1zmRnnzRd6uxOunE7xcC47JgqyzpJ70yK/view) |
 | `MV-07.3.2` | FONDECYT Regular 1161280 - certificado de término |  | Certificado | 2016-2019 | ANID | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1gBqA3M6VBClZIELA7mBAOlzPkK2-9xe4/view) |
-| `MV-07.3.2` | FONDEF D10I1038 - certificado y rol declarado |  | Certificado | 2012-2015 | ANID | ⬜ Pendiente | — |
 | `MV-07.3.3` | FONDEF IDeA ID15I10313 - certificado de término |  | Certificado | 2016-2018 | ANID | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1KkKI1PkvFtGy9chPLi1I7iJmDxHi5kHf/view) |
+| `MV-07.3.4` | FONDEF D10I1038 - certificado y rol declarado |  | Certificado | 2012-2015 | ANID | ⬜ Pendiente | — |
 | `MV-07.3.5` | Conservation International RFP 1001748 BHP-001 |  | Contrato | 2020-2021 | Conservation International | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/114kT5xSMfwOUtujBX2qaLTPiLnhw-ruy/view) |
 | `MV-07.3.6` | ED190018 - certificados |  | Certificado | 2015 y 2017 | ANID EXPLORA | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1oRGyIAoGT_VkRELnYZMl6wvyN8i_5XNl/view) |
-| `MV-07.7` | Dir. Alterno Grupo de Seguimineto Tecnico FONDECYT GE Bio1 |  | Certificado | 2025-2026 | ANID | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1zoMEXwk6yyE44oMCetCct4r4C0qjyFx4/view) |
 | `MV-07.7.1` | Reporte de arbitrajes Publons / Web of Science Researcher Profile | Descargable con años por arbitraje | Reporte | 2026 | Clarivate - https://www.webofscience.com/wos/author/record/O-8820-2015 | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1CiyqNlozaEmxRPfMQHU6jfzLhqugjUao/view) |
-| `MV-07.7.1` | Miembro integrante de Grupo de Estudio FONDECYT (Biología 1) |  | Constancia | 2022-2024 | ANID | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1aAdi6fjhUsz1HPSVAhbqp465ST2EYdCQ/view) |
 | `MV-07.7.3` | Evaluador proyectos FONDECYT |  | Constancia | 2016 | ANID | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1vrJEUNNZewCGlUjnm7O6YNGJRIN30nIB/view) |
+| `MV-07.7.4` | Miembro integrante de Grupo de Estudio FONDECYT (Biología 1) |  | Constancia | 2022-2024 | ANID | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1aAdi6fjhUsz1HPSVAhbqp465ST2EYdCQ/view) |
+| `MV-07.7.4` | Dir. Alterno Grupo de Seguimineto Tecnico FONDECYT GE Bio1 |  | Certificado | 2025-2026 | ANID | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1zoMEXwk6yyE44oMCetCct4r4C0qjyFx4/view) |
 | `MV-07.8.1` | Editor en Jefe revista BOSQUE |  | Constancia | 2019-2022 | Universidad Austral de Chile | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1AOOppbCxrJQrz4opQMrYGB8LewksqqWc/view) |
 | `MV-07.8.2` | Editor Asociado revista científica PLOS Complex Systems |  | Carta | 2023 | PLOS | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1a32sdpcXklDAYmM6DdojFHjKQrA7WiAk/view) |
 | `MV-07.8.3` | Editor Asociado revista científica Discover Cities (Springer Nature) |  | Carta | 2026 | Springer Nature | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1IXnTlzmThRWIHjfgjwONrl0MtpJoDU2J/view) |
@@ -119,6 +119,7 @@ restringido; cualquier problema con el acceso a documentos puede solicitarse
 
 | ID | Documento | Detalle | Tipo | Fecha | Emisor | Estado | Archivo |
 |---|---|---|---|---|---|---|---|
+| `MV-07.4.7.1` | [AUTOR CORRESPONDIENTE] Socioeconomic Segregation and Park Greenness: Insights Across a Strong Latitudinal Gradient | doi 10.1101/2025.03.03.640840 | Preprint | 2025 | bioRxiv | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1arBoyb6MzXDMeBi8xPX1qmq9rMNI1lRz/view) |
 | `MV-07.4.7.4` | [AUTOR CORRESPONDIENTE] Dissecting the Spatial Structure of Cities from Human Mobility Patterns to Define Functional Urban Boundaries | arXiv:1709.06713 | Preprint | 2017 | arXiv | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1dGSjfxjQEtntOz5EJy8uDr0TbozYTZuY/view) |
 
 ## 7.4 Publicaciones — Manuscritos enviados
@@ -167,8 +168,8 @@ restringido; cualquier problema con el acceso a documentos puede solicitarse
 | `MV-07.6.NAC.7` | XIX Reunión Anual de la Sociedad de Ecología de Chile — Análisis multitemporal de imágenes en la cordillera Pelada | Concepción, Chile. Rol: Autor. YA registrada en SIACAD. | Certificado | 2012 | Sociedad de Ecología de Chile | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1NVLBwLQ4XtcvIA0gPZt2Qfob6BLX2Kcf/view) |
 | `MV-07.6.NAC.8` | XIX Reunión Anual de la Sociedad de Ecología de Chile — Relaciones entre la variabilidad climática y la producción de semillas en | Concepción, Chile. Rol: Autor. YA registrada en SIACAD. | Certificado | 2012 | Sociedad de Ecología de Chile | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1pHhSH7AjAu1v6OBfMYOU41dIROvGZ5Xp/view) |
 | `MV-07.6.NAC.11` | XLIII Reunión Anual de la Sociedad de Biología de Chile — Ciudades como organismos: escalamiento alométrico de las redes viales urbanas (Póster) | Pucón, Chile. Rol: Autor. YA registrada en SIACAD. | Certificado | 2008 | Sociedad de Biología de Chile | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1_oc12W5crXEYJNXnYNwGkk5f7XL4Oc16/view) |
-| `MV-07.6.NAC.12` | XLIII Reunión Anual de la Sociedad de Biología de Chile — Impronta de la conducta en la ley de poder de Taylor en dos especies de córvidos | Pucón, Chile. Rol: Autor-Expositor. YA registrada en SIACAD. | Certificado | 2008 | Sociedad de Biología de Chile | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1dqxeL4sS1CcNJ03FOXspO0nV9ndLtw1X/view) |
-| `MV-07.6.NAC.13` | XXIX REUNIÓN ANUAL SOCECOL — Probabilidad de ocurrencia de incendios en Chile modelado con Machine learning (Gradient Boosted Machine) y su impacto en las reservas de carbono irrecuperable. | Olmue | Programa | 2023 | Sociedad de Ecologia | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1mX2BjkDz_IZYvNBoKxn-6eaWfXIsRjYN/view) |
+| `MV-07.6.NAC.12` | XLIII Reunión Anual de la Sociedad de Biología de Chile — Impronta de la conducta en la ley de poder de Taylor en dos especies de córvidos (ORAL) | Pucón, Chile. Rol: Autor-Expositor. YA registrada en SIACAD. | Certificado | 2008 | Sociedad de Biología de Chile | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1dqxeL4sS1CcNJ03FOXspO0nV9ndLtw1X/view) |
+| `MV-07.6.NAC.13` | XXIX REUNIÓN ANUAL SOCECOL — Probabilidad de ocurrencia de incendios en Chile modelado con Machine learning (Gradient Boosted Machine) y su impacto en las reservas de carbono irrecuperable. | Olmué | Programa | 2023 | Sociedad de Ecologia | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1mX2BjkDz_IZYvNBoKxn-6eaWfXIsRjYN/view) |
 
 ## 9. Vinculación con el medio
 
