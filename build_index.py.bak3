@@ -192,23 +192,23 @@ def render(rows):
 
     out = []
     out.append("---")
-    out.append(f'title: "{TITULO}"')
-    if SUBTITULO:
-        out.append(f'subtitle: "{SUBTITULO}"')
+    out.append('title: "Medios de verificación"')
+    out.append('subtitle: "Postulación a Profesor Titular — Horacio Samaniego"')
     out.append("toc: true")
     out.append("toc-depth: 2")
     out.append("---")
     out.append("")
-    if INTRO.strip():
-        out.append(INTRO.strip())
+    out.append("> Índice generado automáticamente desde `manifest.csv`. "
+               "No editar a mano: editar el manifiesto y volver a ejecutar `build_index.py`.")
+    out.append("")
+    out.append(f"**Avance:** {listos} de {total} documentos en carpeta "
+               f"({100 * listos // total if total else 0} %).")
+    if DRIVE_BASE or DRIVE_FOLDERS:
         out.append("")
-    if MOSTRAR_NOTA_GENERADO:
-        out.append("> Índice generado automáticamente desde `manifest.csv`.")
-        out.append("")
-    if MOSTRAR_AVANCE:
-        out.append(f"**Avance:** {listos} de {total} documentos en carpeta "
-                   f"({100 * listos // total if total else 0} %).")
-        out.append("")
+        out.append("> Los documentos se encuentran en una carpeta de Google Drive de acceso "
+                   "restringido. Si un enlace pide autorización, solicítala a "
+                   "horacio@ecoinformatica.cl.")
+    out.append("")
 
     if pendientes and MOSTRAR_PENDIENTES:
         out.append("## Pendientes")

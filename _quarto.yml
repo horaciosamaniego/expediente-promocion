@@ -9,10 +9,9 @@ website:
     left:
       - href: index.qmd
         text: Índice
-      - href: README.md
-        text: Cómo usar
   page-footer:
-    center: "Documento de trabajo interno — no distribuir"
+    center: "Documento de trabajo interno — no distribuir — [horaciosamaniego@uach.cl](mailto:horaciosamaniego@uach.cl)"
+    right: " "
 
 format:
   html:
