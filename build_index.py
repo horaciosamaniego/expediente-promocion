@@ -29,6 +29,30 @@ ROOT = Path(__file__).resolve().parent
 MANIFEST = ROOT / "manifest.csv"
 OUTPUT = ROOT / "index.qmd"
 
+# ─────────── ENCABEZADOS (numerales de la Plantilla Única) ───────────
+# Clave = valor de la columna 'seccion'.  Valor = título tal como debe salir.
+# Si una sección no está aquí, se usa "<seccion>. <seccion_titulo>".
+ENCABEZADOS = {
+    "02":         "2. Títulos profesionales, grados académicos y postdoctorados",
+    "05":         "5. Acreditaciones en programas de postgrado",
+    "06":         "6. Docencia en la UACh",
+    "07":         "7. Investigación",
+    "07.4.2":     "7.4.2 Publicaciones — Capítulos de libro",
+    "07.4.3":     "7.4.3 Publicaciones en revistas WoS",
+    "07.4.4":     "7.4.4 Publicaciones en revistas Scopus",
+    "07.4.6":     "7.4.6 Publicaciones en otras revistas con comité editorial",
+    "07.4.7":     "7.4.7 Publicaciones en revistas sin comité editorial (preprints)",
+    "07.4.E":     "7.4 Publicaciones — Manuscritos enviados",
+    "07.6.INT":   "7.6 Presentaciones a congresos — Internacionales",
+    "07.6.NAC":   "7.6 Presentaciones a congresos — Nacionales",
+    "07.6.1":     "7.6.1 Conferencista invitado",
+    "09":         "9. Vinculación con el medio",
+    "10":         "10. Gestión y compromiso institucional",
+    "13":         "13. Reconocimientos, premios y becas",
+    "15":         "15. Actividades profesionales relevantes",
+}
+# ─────────────────────────────────────────────────────────────────────
+
 # ─────────── TEXTO DE LA PÁGINA ───────────
 # Todo lo que se ve arriba del índice se edita aquí. Acepta Markdown.
 # Deja "" (comillas vacías) para que no aparezca nada.
@@ -189,7 +213,7 @@ def validate(rows):
 def render(rows):
     by_section = defaultdict(list)
     for r in rows:
-        by_section[(r["seccion"].strip(), r["seccion_titulo"].strip())].append(r)
+        by_section[r["seccion"].strip()].append(r)
 
     total = len(rows)
     listos = sum(1 for r in rows if r["estado"].strip().lower() == "ok")
@@ -228,8 +252,9 @@ def render(rows):
             )
         out.append("")
 
-    for (num, titulo), items in sorted(by_section.items(), key=lambda kv: orden_natural(kv[0][0])):
-        out.append(f"## {num}. {titulo}")
+    for num, items in sorted(by_section.items(), key=lambda kv: orden_natural(kv[0])):
+        titulo = ENCABEZADOS.get(num) or f'{num}. {items[0]["seccion_titulo"].strip()}'
+        out.append(f"## {titulo}")
         out.append("")
         if NOTAS_MODO == "columna":
             out.append("| ID | Documento | Detalle | Tipo | Fecha | Emisor | Estado | Archivo |")
