@@ -14,7 +14,7 @@ restringido; cualquier problema con el acceso a documentos puede solicitarse
 [aqui](mailto:horaciosamaniego@uach.cl).
 
 -- ÚLTIMA ACTUALIZACIÓN: 
-31/08/2026 11:56:52 --
+31/08/2026 13:50:59 --
 
 ## 2. Títulos, grados y postdoctorados
 
@@ -53,7 +53,7 @@ restringido; cualquier problema con el acceso a documentos puede solicitarse
 | `MV-07.3.1` | FONDECYT Regular 1211490 - certificado de término |  | Certificado | 2021-2024 | ANID | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1zmRnnzRd6uxOunE7xcC47JgqyzpJ70yK/view) |
 | `MV-07.3.2` | FONDECYT Regular 1161280 - certificado de término |  | Certificado | 2016-2019 | ANID | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1gBqA3M6VBClZIELA7mBAOlzPkK2-9xe4/view) |
 | `MV-07.3.3` | FONDEF IDeA ID15I10313 - certificado de término |  | Certificado | 2016-2018 | ANID | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1KkKI1PkvFtGy9chPLi1I7iJmDxHi5kHf/view) |
-| `MV-07.3.4` | FONDEF D10I1038 - certificado y rol declarado | Ya registrado en SIACAD. Certificado de cierre extraviado. VIDCA está gestionándolo | Certificado | 2012-2015 | ANID | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1bybDHUeJhb_q-RHaJK_DKaHycdwkEJgf/view) |
+| `MV-07.3.4` | FONDEF D10I1038 - certificado y rol declarado (pág. 24) | Ya registrado en SIACAD. Certificado de cierre extraviado. VIDCA está gestionándolo | Certificado | 2012-2015 | ANID | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1bybDHUeJhb_q-RHaJK_DKaHycdwkEJgf/view) |
 | `MV-07.3.5` | Conservation International RFP 1001748 BHP-001 |  | Contrato | 2020-2021 | Conservation International | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/114kT5xSMfwOUtujBX2qaLTPiLnhw-ruy/view) |
 | `MV-07.3.6` | ED190018 - certificados |  | Certificado | 2015 y 2017 | ANID EXPLORA | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1oRGyIAoGT_VkRELnYZMl6wvyN8i_5XNl/view) |
 | `MV-07.7.1` | Reporte de arbitrajes Publons / Web of Science Researcher Profile | Descargable con años por arbitraje | Reporte | 2026 | Clarivate - https://www.webofscience.com/wos/author/record/O-8820-2015 | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1CiyqNlozaEmxRPfMQHU6jfzLhqugjUao/view) |
