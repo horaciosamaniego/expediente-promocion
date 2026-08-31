@@ -24,6 +24,7 @@ import re
 import sys
 from collections import defaultdict
 from pathlib import Path
+from datetime import datetime
 
 ROOT = Path(__file__).resolve().parent
 MANIFEST = ROOT / "manifest.csv"
@@ -69,8 +70,9 @@ corresponde. Los archivos están en una carpeta de Google Drive de acceso
 restringido; cualquier problema con el acceso a documentos puede solicitarse 
 [aqui](mailto:horaciosamaniego@uach.cl).
 
--- ULTIMA ACTUALIZACIÓN Lunes 31 de Agosto 2026 --
-"""
+-- ÚLTIMA ACTUALIZACIÓN: 
+""" + datetime.now().strftime("%d/%m/%Y %H:%M:%S") + " --"
+
 
 # Poner en False para ocultar estos bloques
 MOSTRAR_NOTA_GENERADO = False   # el aviso "generado desde manifest.csv"

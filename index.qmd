@@ -13,7 +13,8 @@ corresponde. Los archivos están en una carpeta de Google Drive de acceso
 restringido; cualquier problema con el acceso a documentos puede solicitarse 
 [aqui](mailto:horaciosamaniego@uach.cl).
 
--- ULTIMA ACTUALIZACIÓN Lunes 31 de Agosto 2026 --
+-- ÚLTIMA ACTUALIZACIÓN: 
+31/08/2026 11:56:52 --
 
 ## 2. Títulos, grados y postdoctorados
 
@@ -52,7 +53,7 @@ restringido; cualquier problema con el acceso a documentos puede solicitarse
 | `MV-07.3.1` | FONDECYT Regular 1211490 - certificado de término |  | Certificado | 2021-2024 | ANID | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1zmRnnzRd6uxOunE7xcC47JgqyzpJ70yK/view) |
 | `MV-07.3.2` | FONDECYT Regular 1161280 - certificado de término |  | Certificado | 2016-2019 | ANID | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1gBqA3M6VBClZIELA7mBAOlzPkK2-9xe4/view) |
 | `MV-07.3.3` | FONDEF IDeA ID15I10313 - certificado de término |  | Certificado | 2016-2018 | ANID | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1KkKI1PkvFtGy9chPLi1I7iJmDxHi5kHf/view) |
-| `MV-07.3.4` | FONDEF D10I1038 - certificado y rol declarado |  | Certificado | 2012-2015 | ANID | ⬜ Pendiente | — |
+| `MV-07.3.4` | FONDEF D10I1038 - certificado y rol declarado | Ya registrado en SIACAD. Certificado de cierre extraviado. VIDCA está gestionándolo | Certificado | 2012-2015 | ANID | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1bybDHUeJhb_q-RHaJK_DKaHycdwkEJgf/view) |
 | `MV-07.3.5` | Conservation International RFP 1001748 BHP-001 |  | Contrato | 2020-2021 | Conservation International | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/114kT5xSMfwOUtujBX2qaLTPiLnhw-ruy/view) |
 | `MV-07.3.6` | ED190018 - certificados |  | Certificado | 2015 y 2017 | ANID EXPLORA | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1oRGyIAoGT_VkRELnYZMl6wvyN8i_5XNl/view) |
 | `MV-07.7.1` | Reporte de arbitrajes Publons / Web of Science Researcher Profile | Descargable con años por arbitraje | Reporte | 2026 | Clarivate - https://www.webofscience.com/wos/author/record/O-8820-2015 | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1CiyqNlozaEmxRPfMQHU6jfzLhqugjUao/view) |
@@ -137,14 +138,14 @@ restringido; cualquier problema con el acceso a documentos puede solicitarse
 |---|---|---|---|---|---|---|---|
 | `MV-07.6.1.1` | IOER-Forum, Leibniz Institute of Ecological Urban and Regional Development — Conferencia invitada en el Forum institucional (10-10-2025) | Dresden, Alemania. Rol: Conferencista invitado. | Programa o invitacion | 2025 | IOER Dresden | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1VF4ht7m7ep1c9UJ47jBaryZSH0bQIx7d/view) |
 | `MV-07.6.1.3` | Masterclass, 2º Ciclo de Capacitação do MOB4.0, Universidade Federal do Rio de Janeiro — Direito à Cidade: acessibilidade, mobilidade e a coleta de dados na construção de cidades mais inclusivas | Río de Janeiro, Brasil. Rol: Conferencista invitado. | Programa o invitacion | 2022 | UFRJ | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1Riw0P6Z0jQhyHsLL4pktTGlo7grjJ_nX/view) |
-| `MV-07.6.1.5` | GIS in Latin America Webinar Series, Center for Latin American Studies, University of Chicago — Functional Definition of City Limits in the Age of Smartphones and Urban Scaling | EE.UU. (en línea). Rol: Conferencista invitado.  (https://www.youtube.com/watch?v=PH93viP8STo) | Programa o invitacion | 2020 | University of Chicago | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1eCNv6SqERiR0mQiAoJ7Jy2glhyJ8UFKm/view) |
+| `MV-07.6.1.5` | GIS in Latin America Webinar Series, Center for Latin American pendiStudies, University of Chicago — Functional Definition of City Limits in the Age of Smartphones and Urban Scaling | EE.UU. (en línea). Rol: Conferencista invitado.  (https://www.youtube.com/watch?v=PH93viP8STo) | Programa o invitacion | 2020 | University of Chicago | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1eCNv6SqERiR0mQiAoJ7Jy2glhyJ8UFKm/view) |
 
 ## 7.6 Presentaciones a congresos — Internacionales
 
 | ID | Documento | Detalle | Tipo | Fecha | Emisor | Estado | Archivo |
 |---|---|---|---|---|---|---|---|
 | `MV-07.6.INT.1` | UrbanSys2023 / Conference on Complex Systems 2023 — Describing Socioeconomic Segregation of Voice Call Interactions | Salvador, Bahía, Brasil. Rol: Autor-Expositor. (https://urbansys2023.weebly.com/) | Programa o certificado | 2023 | CCS 2023 / SBC | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1aq8L9R_BUP33vme-dmPJTRJ0YjvKsKvd/view) |
-| `MV-07.6.INT.2` | Miyawaki Miniforests and Smart Green Network Symposium — Biodiversity and Disaster Resilience in Smart Cities framework: urban areas prone to tsunami in Chile | Conferencia en línea. Rol: Co-autor. POR CARGAR en SIACAD. | Programa | 2022 | Univ. of Adelaide / Kyushu Univ. | ⬜ Pendiente | — |
+| `MV-07.6.INT.2` | Miyawaki Miniforests and Smart Green Network Symposium — Biodiversity and Disaster Resilience in Smart Cities framework: urban areas prone to tsunami in Chile | Conferencia en línea. Rol: Co-autor. POR CARGAR en SIACAD. | Programa | 2022 | Univ. of Adelaide / Kyushu Univ. | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1FBijN3MQmLwnFEQjatZJtNaqsNEYeVI0/view) |
 | `MV-07.6.INT.3` | LANET 2.0 — Latin American Conference on Complex Networks — The Topology of Communicating Across Cities of Increasing Sizes | Cartagena, Colombia. Rol: Autor-Expositor. POR CARGAR en SIACAD. | Programa o certificado | 2019 | Universidad de los Andes | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1Rr_goRivjo3B6t4Ws7hzhe1DfrhNNDlt/view) |
 | `MV-07.6.INT.4` | NetSci-X 2019 — The time geography of segregation during working hours | Santiago, Chile. Rol: Co-autor. YA registrada en SIACAD. | Programa | 2019 | NetSci-X | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1awkq1E5rcIgICzDmaPnxh5I54LQiEPXx/view) |
 | `MV-07.6.INT.5` | NetSci-X 2019 — Defining urban boundaries from ICT data: spectral network analysis and urban scaling laws | Santiago, Chile. Rol: Co-autor. YA registrada en SIACAD. | Programa | 2019 | NetSci-X | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1svDuNL6JmTv7uuTRxwaocq7HGF8bFzQ-/view) |
