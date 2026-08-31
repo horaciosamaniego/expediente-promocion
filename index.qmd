@@ -53,6 +53,7 @@ restringido; cualquier problema con el acceso a documentos puede solicitarse
 | `MV-07.3.3` | FONDEF IDeA ID15I10313 - certificado de término |  | Certificado | 2016-2018 | ANID | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1KkKI1PkvFtGy9chPLi1I7iJmDxHi5kHf/view) |
 | `MV-07.3.5` | Conservation International RFP 1001748 BHP-001 |  | Contrato | 2020-2021 | Conservation International | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/114kT5xSMfwOUtujBX2qaLTPiLnhw-ruy/view) |
 | `MV-07.3.6` | ED190018 - certificados |  | Certificado | 2015 y 2017 | ANID EXPLORA | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1oRGyIAoGT_VkRELnYZMl6wvyN8i_5XNl/view) |
+| `MV-07.7` | Dir. Alterno Grupo de Seguimineto Tecnico FONDECYT GE Bio1 |  | Certificado | 2025-2026 | ANID | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1zoMEXwk6yyE44oMCetCct4r4C0qjyFx4/view) |
 | `MV-07.7.1` | Reporte de arbitrajes Publons / Web of Science Researcher Profile | Descargable con años por arbitraje | Reporte | 2026 | Clarivate - https://www.webofscience.com/wos/author/record/O-8820-2015 | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1CiyqNlozaEmxRPfMQHU6jfzLhqugjUao/view) |
 | `MV-07.7.1` | Miembro integrante de Grupo de Estudio FONDECYT (Biología 1) |  | Constancia | 2022-2024 | ANID | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1aAdi6fjhUsz1HPSVAhbqp465ST2EYdCQ/view) |
 | `MV-07.7.3` | Evaluador proyectos FONDECYT |  | Constancia | 2016 | ANID | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1vrJEUNNZewCGlUjnm7O6YNGJRIN30nIB/view) |
@@ -166,12 +167,6 @@ restringido; cualquier problema con el acceso a documentos puede solicitarse
 | `MV-07.6.NAC.11` | XLIII Reunión Anual de la Sociedad de Biología de Chile — Ciudades como organismos: escalamiento alométrico de las redes viales urbanas (Póster) | Pucón, Chile. Rol: Autor. YA registrada en SIACAD. | Certificado | 2008 | Sociedad de Biología de Chile | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1_oc12W5crXEYJNXnYNwGkk5f7XL4Oc16/view) |
 | `MV-07.6.NAC.12` | XLIII Reunión Anual de la Sociedad de Biología de Chile — Impronta de la conducta en la ley de poder de Taylor en dos especies de córvidos | Pucón, Chile. Rol: Autor-Expositor. YA registrada en SIACAD. | Certificado | 2008 | Sociedad de Biología de Chile | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1dqxeL4sS1CcNJ03FOXspO0nV9ndLtw1X/view) |
 | `MV-07.6.NAC.13` | XXIX REUNIÓN ANUAL SOCECOL — Probabilidad de ocurrencia de incendios en Chile modelado con Machine learning (Gradient Boosted Machine) y su impacto en las reservas de carbono irrecuperable. | Olmue | Programa | 2023 | Sociedad de Ecologia | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1mX2BjkDz_IZYvNBoKxn-6eaWfXIsRjYN/view) |
-
-## 07.7.4. 
-
-| ID | Documento | Detalle | Tipo | Fecha | Emisor | Estado | Archivo |
-|---|---|---|---|---|---|---|---|
-| `MV-07.7` | Dir. Alterno Grupo de Seguimineto Tecnico FONDECYT GE Bio1 |  | Certificado | 2025-2026 | ANID | ✅ En carpeta | [abrir en Drive](https://drive.google.com/file/d/1zoMEXwk6yyE44oMCetCct4r4C0qjyFx4/view) |
 
 ## 9. Vinculación con el medio
 
